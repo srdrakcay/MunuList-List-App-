@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.bottomBar.ShoppingFragment">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Create Your Shopping List Product"
+        app:layout_constraintBottom_toTopOf="@+id/productName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        android:textColor="#27754C"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOPPİNG"
+        android:textColor="#27754C"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:hint="Product Name "
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        app:boxCornerRadiusBottomEnd="7sp"
+        app:boxCornerRadiusBottomStart="7sp"
+        app:boxCornerRadiusTopEnd="7sp"
+        app:boxCornerRadiusTopStart="7sp"
+        app:boxStrokeColor="#27754C"
+        app:boxStrokeWidth="0sp"
+        app:helperText="Exc. Skirts"
+        app:helperTextTextColor="#27754C"
+        app:hintTextColor="#27754C"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/productSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Product Size"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        app:boxCornerRadiusBottomEnd="7sp"
+        app:boxCornerRadiusBottomStart="7sp"
+        app:boxCornerRadiusTopEnd="7sp"
+        app:boxCornerRadiusTopStart="7sp"
+        app:boxStrokeColor="#27754C"
+        app:boxStrokeWidth="0sp"
+        app:helperText="Exc. M/S/XL"
+        app:helperTextTextColor="#27754C"
+        app:hintTextColor="#27754C"
+        app:layout_constraintTop_toBottomOf="@+id/productName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/productStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Product Store"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        app:boxCornerRadiusBottomEnd="7sp"
+        app:boxCornerRadiusBottomStart="7sp"
+        app:boxCornerRadiusTopEnd="7sp"
+        app:boxCornerRadiusTopStart="7sp"
+        app:boxStrokeColor="#27754C"
+        app:boxStrokeWidth="0sp"
+        app:helperText="Exc. TARGET"
+        app:helperTextTextColor="#27754C"
+        app:hintTextColor="#27754C"
+        app:layout_constraintTop_toBottomOf="@+id/productSize">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#27754C"
+        android:text="Add Your List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productStore"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
