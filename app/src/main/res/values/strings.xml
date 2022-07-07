@@ -3,4 +3,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="m_n_list">MünüList</string>
+    <string name="add_your_list">Add Your List</string>
+    <string name="product_store">Product Store</string>
+    <string name="product_size">Product Size</string>
+    <string name="product_name">Product Name</string>
+    <string name="shopp_ng">SHOPPİNG</string>
+    <string name="create_your_shopping_list_product">Create Your Shopping List Product</string>
 </resources>

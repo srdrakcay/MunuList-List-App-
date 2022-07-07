@@ -8,21 +8,34 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.serdar.mnlist.view.bottomBar.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
     <fragment
         android:id="@+id/groceryFragment"
         android:name="com.serdar.mnlist.view.bottomBar.GroceryFragment"
-        android:label="fragment_grocery"
+        android:label="Grocery"
         tools:layout="@layout/fragment_grocery" />
     <fragment
         android:id="@+id/shoppingFragment"
         android:name="com.serdar.mnlist.view.bottomBar.ShoppingFragment"
-        android:label="fragment_shopping"
+        android:label="Shopping"
         tools:layout="@layout/fragment_shopping" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.serdar.mnlist.view.bottomBar.ProfileFragment"
-        android:label="fragment_profile"
+        android:label="Profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.serdar.mnlist.view.bottomBar.UpdateFragment"
+        android:label="Update"
+        tools:layout="@layout/fragment_update" >
+        <argument
+            android:name="currentShopping"
+            app:argType="com.serdar.mnlist.data.Shopping" />
+    </fragment>
 </navigation>

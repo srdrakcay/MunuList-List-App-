@@ -12,11 +12,11 @@ interface ShoppingDao {
     fun readAllData():LiveData<List<Shopping>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addShopping(shopping: Shopping):Int
+     fun addShopping(shopping: Shopping):Long
 
     @Update
-    suspend fun updateShopping(shopping: Shopping)
+     fun updateShopping(shopping: Shopping)
 
     @Delete
-    suspend fun deleteShopping(shopping: Shopping)
+     fun deleteShopping(shopping: Shopping)
 }

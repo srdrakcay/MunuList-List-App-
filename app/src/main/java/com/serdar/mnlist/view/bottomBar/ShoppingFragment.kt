@@ -1,10 +1,12 @@
 package com.serdar.mnlist.view.bottomBar
 
 import android.os.Bundle
+import android.text.TextUtils
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.serdar.mnlist.R
 import com.serdar.mnlist.data.Shopping
@@ -24,9 +26,28 @@ class ShoppingFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.addButton.setOnClickListener {
-            val shopping=Shopping(id = 0,binding.productName.editText.toString(),binding.productStore.editText.toString(),binding.productSize.editText.toString())
-            shoppingViewModel.addShoping(shopping)
+
+
+            insertDataToDataBase()
         }
+    }
+
+    private fun insertDataToDataBase() {
+
+        val productName =binding.productNames.text.toString()
+        val prodoctSize =binding.productSizes.text.toString()
+        val productStore =binding.productStores.text.toString()
+
+        val shopping=Shopping(0,productName.toString(),prodoctSize.toString(),productStore.toString())
+        shoppingViewModel.addShoping(shopping)
+
+
+        if(inputCheck(productName,prodoctSize,productStore)){
+            Toast.makeText(requireContext(),"Empty List ",Toast.LENGTH_SHORT).show()
+        }
+    }
+    private fun inputCheck(productName:String,prodoctSize:String,productStore:String):Boolean{
+        return !(TextUtils.isEmpty(productName)&&TextUtils.isEmpty(prodoctSize)&&TextUtils.isEmpty(productStore))
     }
 
 }

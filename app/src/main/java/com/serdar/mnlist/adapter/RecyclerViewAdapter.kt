@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.serdar.mnlist.R
 import com.serdar.mnlist.data.Shopping
+import com.serdar.mnlist.view.bottomBar.UpdateFragment
 
 class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
 
@@ -34,6 +35,9 @@ class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder
     override fun onBindViewHolder(holder: RecyclerViewAdapter.MyViewHolder, position: Int) {
         val currentShopping=shoppingList[position]
         holder.bind(currentShopping)
+        holder.itemView.setOnClickListener{
+
+        }
     }
 
     override fun getItemCount(): Int {

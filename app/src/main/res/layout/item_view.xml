@@ -3,10 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rvİtemView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#F32121"
-    android:backgroundTint="#D0F6D5"
-    app:cardBackgroundColor="#85B879"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#DCDCDC"
     app:cardCornerRadius="10dp"
     app:cardElevation="8dp">
 
@@ -54,18 +52,6 @@
             android:text="TextView"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/shopid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="5dp"
-            android:paddingLeft="5dp"
-            android:paddingTop="5dp"
-            android:paddingEnd="5dp"
-            android:paddingRight="5dp"
-            android:paddingBottom="5dp"
-            android:text="TextView"
-            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
