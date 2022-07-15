@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/create_your_shopping_list_product"
-        app:layout_constraintBottom_toTopOf="@+id/productName"
+        app:layout_constraintBottom_toTopOf="@+id/productNamed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         android:textColor="#27754C"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.094" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/productName"
+        android:id="@+id/productNamed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
@@ -50,7 +50,7 @@
         app:boxCornerRadiusTopStart="7sp"
         app:boxStrokeColor="#27754C"
         app:boxStrokeWidth="0sp"
-        app:helperText="Exc. Skirts"
+        app:helperText="Exc. Tomatoes"
         app:helperTextTextColor="#27754C"
         app:hintTextColor="#27754C"
         app:layout_constraintTop_toTopOf="parent">
@@ -63,7 +63,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/productSize"
+        android:id="@+id/productSized"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -76,10 +76,10 @@
         app:boxCornerRadiusTopStart="7sp"
         app:boxStrokeColor="#27754C"
         app:boxStrokeWidth="0sp"
-        app:helperText="Exc. M/S/XL"
+        app:helperText="Exc. kg/gr/piece"
         app:helperTextTextColor="#27754C"
         app:hintTextColor="#27754C"
-        app:layout_constraintTop_toBottomOf="@+id/productName">
+        app:layout_constraintTop_toBottomOf="@+id/productNamed">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/productSizes"
@@ -89,7 +89,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/productStore"
+        android:id="@+id/productStored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -102,20 +102,20 @@
         app:boxCornerRadiusTopStart="7sp"
         app:boxStrokeColor="#27754C"
         app:boxStrokeWidth="0sp"
-        app:helperText="Exc. TARGET"
+        app:helperText="Exc. WALMART"
         app:helperTextTextColor="#27754C"
         app:hintTextColor="#27754C"
-        app:layout_constraintTop_toBottomOf="@+id/productSize">
+        app:layout_constraintTop_toBottomOf="@+id/productSized">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/productStores"
+            android:id="@+id/productStoresd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="11sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/updateButton"
+        android:id="@+id/updateButtonGrocery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#27754C"
@@ -124,19 +124,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/productStore"
+        app:layout_constraintTop_toBottomOf="@+id/productStored"
 
         />
 
     <ImageView
-        android:id="@+id/deleteButton"
+        android:id="@+id/deleteGrocery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:src="@drawable/delete"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/productStore" />
+        app:layout_constraintTop_toBottomOf="@+id/productStored" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

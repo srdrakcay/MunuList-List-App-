@@ -14,9 +14,13 @@ interface ShoppingDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
      fun addShopping(shopping: Shopping):Long
 
+
     @Update
      fun updateShopping(shopping: Shopping)
 
     @Delete
      fun deleteShopping(shopping: Shopping)
+
+     @Query("DELETE FROM shoppingList")
+      fun deleteAllShopping()
 }

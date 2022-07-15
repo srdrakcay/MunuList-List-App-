@@ -21,21 +21,16 @@ class ProfileFragment : Fragment() {
 
         }
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
     binding=FragmentProfileBinding.inflate(layoutInflater)
-
-
         mAuth=FirebaseAuth.getInstance()
         val currentUser=mAuth.currentUser
-
         binding.idText.text=currentUser?.uid
         binding.nameT.text=currentUser?.displayName
         binding.mailText.text=currentUser?.email
-
 
         Glide
             .with(this)
@@ -48,8 +43,6 @@ class ProfileFragment : Fragment() {
             startActivity(intent)
 
         }
-
-
 
         return binding.root
     }

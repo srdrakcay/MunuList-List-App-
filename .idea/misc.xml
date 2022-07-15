@@ -4,16 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/MnList/app/src/main/res/drawable/grocery.xml" value="0.3675" />
+        <entry key="..\:/Users/user/MnList/app/src/main/res/layout-v28/fragment_home.xml" value="0.21557971014492755" />
         <entry key="..\:/Users/user/MnList/app/src/main/res/layout/activity_home.xml" value="0.5" />
         <entry key="..\:/Users/user/MnList/app/src/main/res/layout/activity_main.xml" value="0.33559782608695654" />
         <entry key="..\:/Users/user/MnList/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
         <entry key="..\:/Users/user/MnList/app/src/main/res/layout/fragment_grocery.xml" value="0.33559782608695654" />
-        <entry key="..\:/Users/user/MnList/app/src/main/res/layout/fragment_home.xml" value="0.33559782608695654" />
+        <entry key="..\:/Users/user/MnList/app/src/main/res/layout/fragment_grocery_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/MnList/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/user/MnList/app/src/main/res/layout/fragment_profile.xml" value="0.33559782608695654" />
         <entry key="..\:/Users/user/MnList/app/src/main/res/layout/fragment_shopping.xml" value="0.33" />
+        <entry key="..\:/Users/user/MnList/app/src/main/res/layout/fragment_shopping_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/MnList/app/src/main/res/layout/fragment_splash.xml" value="0.18" />
-        <entry key="..\:/Users/user/MnList/app/src/main/res/layout/fragment_update.xml" value="0.12777777777777777" />
-        <entry key="..\:/Users/user/MnList/app/src/main/res/layout/item_view.xml" value="0.27472527472527475" />
+        <entry key="..\:/Users/user/MnList/app/src/main/res/layout/fragment_update.xml" value="0.75" />
+        <entry key="..\:/Users/user/MnList/app/src/main/res/layout/fragment_update_grocery.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/MnList/app/src/main/res/layout/item_view.xml" value="0.33" />
+        <entry key="..\:/Users/user/MnList/app/src/main/res/layout/item_view2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/MnList/app/src/main/res/menu/delete_item.xml" value="0.26851851851851855" />
         <entry key="..\:/Users/user/MnList/app/src/main/res/menu/nav_bar.xml" value="0.365625" />
       </map>
     </option>

@@ -42,12 +42,9 @@ class SplashFragment : Fragment() {
          val intent=Intent(requireActivity(),SignInActivity::class.java)
          startActivity(intent)
 
-
      }
 
     },3000)
-
-
 
 
     }

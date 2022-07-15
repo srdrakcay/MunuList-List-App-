@@ -9,4 +9,5 @@
     <string name="product_name">Product Name</string>
     <string name="shopp_ng">SHOPPİNG</string>
     <string name="create_your_shopping_list_product">Create Your Shopping List Product</string>
+    <string name="delete">Delete</string>
 </resources>

@@ -14,6 +14,7 @@ import kotlinx.coroutines.launch
 
 class ShoppingViewModel(application: Application): AndroidViewModel(application) {
 
+
     val readAllData:LiveData<List<Shopping>>
     private val repository:ShoppingRepository
 
@@ -22,6 +23,7 @@ class ShoppingViewModel(application: Application): AndroidViewModel(application)
     val shoppingDao = ShoppingDatabase.getDatabase(application).shoppingDao()
      repository= ShoppingRepository(shoppingDao)
      readAllData=shoppingDao.readAllData()
+
     }
 
     fun addShoping(shopping: Shopping){
@@ -29,6 +31,7 @@ class ShoppingViewModel(application: Application): AndroidViewModel(application)
             repository.addShopping(shopping)
         }
     }
+
     fun updateShoping(shopping: Shopping) {
         viewModelScope.launch(Dispatchers.IO) {
             repository.updateShopping(shopping)

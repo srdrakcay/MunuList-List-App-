@@ -35,35 +35,39 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardRv"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="250dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="80dp"
         android:background="#B85858"
-        android:backgroundTint="#DCDCDC"
+        android:backgroundTint="#FFFFFF"
         android:fadingEdgeLength="20dp"
         app:cardCornerRadius="30sp"
         app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/descText">
 
-        <TextView
-            android:id="@+id/homeName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="130dp"
-            android:paddingTop="10dp"
-            android:text="Your Shopping List"
-            android:textColor="#27754C"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvView"
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingStart="20dp"
-            android:paddingTop="40dp" />
+            android:layout_height="match_parent" />
+
+
     </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/cardRv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabSelectedTextColor="#27754C"
+        app:tabTextColor="@color/black"
+        app:tabIndicatorColor="#27754C"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </com.google.android.material.tabs.TabLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

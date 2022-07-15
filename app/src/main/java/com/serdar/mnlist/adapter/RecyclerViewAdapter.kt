@@ -4,10 +4,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.serdar.mnlist.R
 import com.serdar.mnlist.data.Shopping
-import com.serdar.mnlist.view.bottomBar.UpdateFragment
+import com.serdar.mnlist.view.bottomBar.HomeFragmentDirections
 
 class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
 
@@ -18,11 +20,10 @@ class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder
         val shopSize=view.findViewById<TextView>(R.id.shopSize)
         val shopName=view.findViewById<TextView>(R.id.shopName)
 
-
         fun bind(shopping: Shopping){
-            shopName.setText(shopping.name)
-            shopSize.setText(shopping.size)
-            shopStore.setText(shopping.store)
+            shopName.setText(shopping.size)
+            shopSize.setText(shopping.store)
+            shopStore.setText(shopping.name)
 
         }
     }
@@ -35,15 +36,16 @@ class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder
     override fun onBindViewHolder(holder: RecyclerViewAdapter.MyViewHolder, position: Int) {
         val currentShopping=shoppingList[position]
         holder.bind(currentShopping)
-        holder.itemView.setOnClickListener{
-
-        }
+       holder.itemView.setOnClickListener {
+           val action=HomeFragmentDirections.actionHomeFragmentToUpdateFragment(currentShopping)
+           holder.itemView.findNavController().navigate(action)
+       }
     }
 
     override fun getItemCount(): Int {
         return shoppingList.size
     }
-    fun setData(shoppingList: List<Shopping>){
+    fun setDataShopping(shoppingList: List<Shopping>){
         this.shoppingList=shoppingList
         notifyDataSetChanged()
     }

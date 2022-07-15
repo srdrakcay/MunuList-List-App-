@@ -8,9 +8,13 @@ class ShoppingRepository(private val shoppingDao: ShoppingDao) {
 
     val readAllData : LiveData<List<Shopping>> = shoppingDao.readAllData()
 
+
+
     suspend fun addShopping(shopping: Shopping){
         shoppingDao.addShopping(shopping)
     }
+
+
     suspend fun updateShopping(shopping: Shopping){
         shoppingDao.updateShopping(shopping)
     }

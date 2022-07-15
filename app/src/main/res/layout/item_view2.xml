@@ -23,42 +23,31 @@
 
 
             <TextView
-                android:id="@+id/shopStore"
+                android:id="@+id/shopStores"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
                 android:text="TextView"
                 android:textColor="#F62424"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
             <TextView
-                android:id="@+id/shopSize"
+                android:id="@+id/shopNames"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="84dp"
                 android:text="TextView"
                 android:textColor="#F62424"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:layout_constraintTop_toTopOf="@+id/textView4"
                 app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/shopName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="8dp"
-                android:text="TextView"
-                android:textColor="#F62424"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -67,8 +56,10 @@
                 android:layout_marginStart="36dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="286dp"
+                android:layout_marginBottom="2dp"
                 android:text="Product Name:"
                 android:textColor="#27754C"
+                app:layout_constraintBottom_toTopOf="@+id/shopNames"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -79,30 +70,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="36dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="297dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="198dp"
                 android:text="Product Store:"
                 android:textColor="#27754C"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView3"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/shopStore" />
+                app:layout_constraintTop_toBottomOf="@+id/shopNames" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="36dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="290dp"
+                android:layout_marginTop="10dp"
 
+                android:layout_marginEnd="290dp"
                 android:text="Product Size:"
                 android:textColor="#27754C"
-                app:layout_constraintBottom_toTopOf="@+id/shopName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/shopSize" />
+                app:layout_constraintTop_toBottomOf="@+id/shopStores" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -125,7 +115,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/textView4"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/productname" />
+                app:srcCompat="@drawable/groceryname" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -137,7 +127,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/textView5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView4"
-                app:srcCompat="@drawable/productstore" />
+                app:srcCompat="@drawable/grocerystore" />
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -150,7 +140,19 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView5"
-                app:srcCompat="@drawable/productsize" />
+                app:srcCompat="@drawable/grocerysize" />
+
+            <TextView
+                android:id="@+id/shopSizes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                android:textColor="#F62424"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
