@@ -1,6 +1,23 @@
 # MunuList
 This is my first application using the kotlin language. While writing this application, I worked with many different libraries.
 
+
+
+
+
+
+
+![Başlıksız-6A](https://user-images.githubusercontent.com/24317263/180790064-dd553dcf-86d2-459e-b7ed-b137fc44c260.png)
+
+![Başlıksız-6A](https://user-images.githubusercontent.com/24317263/180790106-0088e5fc-ca2a-4a3b-9eef-1442e8ba6fc5.png)
+
+
+
+
+
+
+
+
 Privacy Policy
 Serdar AKÇAY built the MünüList app as a Free app. This SERVICE is provided by Serdar AKÇAY at no cost and is intended for use as is.
 
