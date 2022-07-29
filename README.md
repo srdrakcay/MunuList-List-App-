@@ -2,14 +2,94 @@
 This is my first application using the kotlin language. While writing this application, I worked with many different libraries.
 
 
+# Project
+- MVVM
+- LiveData
+- ViewModel
+- Lottie
+- Room
+- FirebaseAuth
+- Navigation Component
+- Courotines
+- Glide
+- ssp-sdp
+
+
+# Secreens
+![Uygulama Ekran Görüntüsü](https://user-images.githubusercontent.com/24317263/180790064-dd553dcf-86d2-459e-b7ed-b137fc44c260.png)
+![Uygulama Ekran Görüntüsü](https://user-images.githubusercontent.com/24317263/180790106-0088e5fc-ca2a-4a3b-9eef-1442e8ba6fc5.png)
+
+
+
+# Social
+  [Linkedin](https://www.linkedin.com/in/serdarakcay/)
+  
+  [Github](https://github.com/srdrakcay)
+  
+  [Google Play](https://play.google.com/store/apps/developer?id=Serdar+Ak%C3%A7ay)
+  
 
 
 
 
 
-![Başlıksız-6A](https://user-images.githubusercontent.com/24317263/180790064-dd553dcf-86d2-459e-b7ed-b137fc44c260.png)
 
-![Başlıksız-6A](https://user-images.githubusercontent.com/24317263/180790106-0088e5fc-ca2a-4a3b-9eef-1442e8ba6fc5.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
