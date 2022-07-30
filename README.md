@@ -7,6 +7,7 @@ This is my first application using the kotlin language. While writing this appli
 - LiveData
 - ViewModel
 - Lottie
+- ViewPager 2
 - Room
 - FirebaseAuth
 - Navigation Component
